@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 25px; /* Adjusted padding for smaller screens */
+  text-align: center;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 20px; /* Adjusted padding for smaller screens */
+  height: 50px; /* Adjusted height for smaller screens */
+  border-radius: 25px; /* Adjusted border radius for smaller screens */
+  flex: 1;
+  margin-right: 12px; /* Adjusted margin for smaller screens */
+  font-size: 16px; /* Adjusted font size for smaller screens */
+}
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 50px; /* Adjusted width for smaller screens */
+  height: 50px; /* Adjusted height for smaller screens */
+  cursor: pointer;
+}
+.search button img {
+  width: 14px; /* Adjusted width for smaller screens */
+}
+.weather-icon {
+  width: 130px; /* Adjusted width for smaller screens */
+  margin-top: 20px; /* Adjusted margin for smaller screens */
+}
+.weather h1 {
+  font-size: 60px; /* Adjusted font size for smaller screens */
+  font-weight: 400;
+}
+.weather h2 {
+  font-size: 35px; /* Adjusted font size for smaller screens */
+  font-weight: 400;
+  margin-top: -10px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px; /* Adjusted padding for smaller screens */
+  margin-top: 30px; /* Adjusted margin for smaller screens */
+}
+.column {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.column img {
+  width: 30px; /* Adjusted width for smaller screens */
+  margin-right: 8px; /* Adjusted margin for smaller screens */
+}
+.humidity,
+.wind {
+  font-size: 20px; /* Adjusted font size for smaller screens */
+  margin-top: -4px;
+}
+.error {
+  text-align: left;
+  margin-left: 8px; /* Adjusted margin for smaller screens */
+  font-size: 12px; /* Adjusted font size for smaller screens */
+  margin-top: 8px; /* Adjusted margin for smaller screens */
+  display: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 40px 20px; /* Adjusted padding for even smaller screens */
+  }
+  .search input {
+    padding: 10px 16px; /* Adjusted padding for even smaller screens */
+    height: 40px; /* Adjusted height for even smaller screens */
+    margin-right: 10px; /* Adjusted margin for even smaller screens */
+    font-size: 14px; /* Adjusted font size for even smaller screens */
+  }
+  .search button {
+    width: 40px; /* Adjusted width for even smaller screens */
+    height: 40px; /* Adjusted height for even smaller screens */
+  }
+  .search button img {
+    width: 12px; /* Adjusted width for even smaller screens */
+  }
+  .weather-icon {
+    width: 100px; /* Adjusted width for even smaller screens */
+    margin-top: 15px; /* Adjusted margin for even smaller screens */
+  }
+  .weather h1 {
+    font-size: 50px; /* Adjusted font size for even smaller screens */
+  }
+  .weather h2 {
+    font-size: 30px; /* Adjusted font size for even smaller screens */
+  }
+  .details {
+    padding: 0 10px; /* Adjusted padding for even smaller screens */
+    margin-top: 20px; /* Adjusted margin for even smaller screens */
+  }
+  .column img {
+    width: 25px; /* Adjusted width for even smaller screens */
+    margin-right: 6px; /* Adjusted margin for even smaller screens */
+  }
+  .humidity,
+  .wind {
+    font-size: 18px; /* Adjusted font size for even smaller screens */
+    margin-top: -3px;
+  }
+  .error {
+    margin-left: 6px; /* Adjusted margin for even smaller screens */
+    font-size: 10px; /* Adjusted font size for even smaller screens */
+    margin-top: 6px; /* Adjusted margin for even smaller screens */
+  }
+}
